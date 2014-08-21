@@ -10,7 +10,7 @@ ENVSCRIPT=$BUILD_DIR/.profile.d/tesseract-ocr.sh
 TESSERACT_OCR_REMOTE=https://github.com/AnyFetch/heroku-buildpack-tesseract/raw/master/tesseract.tar.gz
 
 echo 'Getting Tesseract-ocr Binaries'
-echo 'Location: $TESSERACT_OCR_REMOTE'
+echo "Location: $TESSERACT_OCR_REMOTE"
 mkdir -p $INSTALL_DIR
 curl $TESSERACT_OCR_REMOTE -o - | tar -xz -C $INSTALL_DIR -f -
 
