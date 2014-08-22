@@ -32,6 +32,7 @@ then
    done
 fi
 echo "Building runtime environment for tesseract-ocr"
+chmod +x $BUILD_DIR/vendor/tesseract-ocr/bin/*
 mkdir -p $BUILD_DIR/.profile.d
 echo "export PATH=\"\$PATH:$TESSERACT_OCR_DIR/bin\"" > $ENVSCRIPT
 echo "export LD_LIBRARY_PATH=\"\$LD_LIBRARY_PATH:$TESSERACT_OCR_DIR/lib\"" >> $ENVSCRIPT
